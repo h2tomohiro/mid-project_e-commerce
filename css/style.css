@@ -3,7 +3,7 @@
 
 
 :root {
-  --mainPink: #ef7998;
+  --mainOrange: #E96228;
   --mainYellow: rgb(249, 228, 148);
   --mainWhite: #fff;
   --mainBlack: #000;
@@ -22,10 +22,10 @@ body {
 }
 .toggler-icon {
   font-size: 2.5rem;
-  color: var(--mainPink);
+  color: var(--mainOrange);
 }
 .nav-link {
-  color: var(--mainPink);
+  color: var(--mainOrange);
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
@@ -47,8 +47,8 @@ body {
   cursor: pointer;
 }
 .cart-info:hover {
-  background: var(--mainPink);
-  border-color: var(--mainPink);
+  background: var(--mainOrange);
+  border-color: var(--mainOrange);
   color: var(--mainWhite);
 }
 .cart-info:hover .cart-info__icon {
@@ -68,7 +68,7 @@ body {
   margin-top: -4rem;
 }
 .banner-title {
-  color: var(--mainPink);
+  color: var(--mainOrange);
   font-size: 4rem;
 }
 .banner-link {
@@ -78,7 +78,7 @@ body {
 }
 .banner-link:hover {
   background: var(--mainBlack);
-  color: var(--mainPink);
+  color: var(--mainOrange);
 }
 /* endo of banner */
 /* cart  */
@@ -105,7 +105,7 @@ body {
 /* end of cart */
 /* cart item */
 .cart-item-remove {
-  color: var(--mainPink);
+  color: var(--mainOrange);
   transition: all 1s ease-in-out;
 }
 .cart-item-remove:hover {
@@ -118,19 +118,19 @@ body {
 /* cart item */
 /* cart buttons */
 .btn-pink {
-  color: var(--mainPink) !important;
-  border-color: var(--mainPink) !important;
+  color: var(--mainOrange) !important;
+  border-color: var(--mainOrange) !important;
 }
 .btn-black {
   color: var(--mainBlack) !important;
   border-color: var(--mainBlack) !important;
 }
 .btn-black:hover {
-  color: var(--mainPink) !important;
+  color: var(--mainOrange) !important;
   background: var(--mainBlack) !important;
 }
 .btn-pink:hover {
-  background: var(--mainPink) !important;
+  background: var(--mainOrange) !important;
   color: var(--mainBlack) !important;
 }
 /* end of cart buttons */
@@ -194,7 +194,7 @@ body {
 }
 /*end of  store items */
 .search-box {
-  background: var(--mainPink);
+  background: var(--mainOrange);
   color: var(--mainBlack);
 }
 
@@ -223,7 +223,7 @@ body {
   border-radius: 0.3rem;
 }
 .lightbox-close {
-  color: var(--mainPink);
+  color: var(--mainOrange);
   font-size: 3rem;
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -235,7 +235,7 @@ body {
 .lightbox-control {
   position: absolute;
   font-size: 4rem;
-  color: var(--mainPink);
+  color: var(--mainOrange);
   transition: all 1s linear;
   cursor: pointer;
 }
