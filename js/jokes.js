@@ -18,4 +18,7 @@ jokeBtn.addEventListener('click', e => {
     e.preventDefault();
     console.log('button click');
     getDataJokes();
-})
+});
+
+
+
