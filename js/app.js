@@ -53,6 +53,9 @@
         const cart = document.getElementById("cart");
         const total = document.querySelector(".cart-total-container");
 
+
+        // localStorage.setItem('cart', cart1);
+        // const cart1 = localStorage.getItem('cart1');
         cart.insertBefore(cartItem, total);
         alert("item added to the cart");
         showTotals();
@@ -73,10 +76,25 @@
       return total;
     }, 0);
     const finalMoney = totalMoney.toFixed(2);
-    console.log(finalMoney);
+
+    // document.getElementById("cart-total").textContent = finalMoney;
+    // var myContent = document.getElementById("cart-total").textContent
+    // var myContent = finalMoney;
+    // localStorage.setItem("myContent", myContent);
+    // var Content = localStorage.getItem("myContent");
+    // document.getElementById("cart-total").value = Content;
 
     document.getElementById("cart-total").textContent = finalMoney;
     document.querySelector(".item-total").textContent = finalMoney;
-    document.queryElementById("item-count").textContent = total.length;
+    document.getElementById("item-count").textContent = total.length;
+
+    // function mySave() {
+    //   var myContent = document.getElementById("myTextarea").value;
+    //   localStorage.setItem("myContent", myContent);
+    // }
+    // function myLoad() {
+    //   var myContent = localStorage.getItem("myContent");
+    //   document.getElementById("myTextarea").value = myContent;
+    // }
   }
 })();
