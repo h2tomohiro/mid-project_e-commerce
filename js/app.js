@@ -101,7 +101,7 @@ function showTotals() {
 function removeItem() {
   const trashBtn = document.querySelectorAll(".cart-item-remove");
 
-  trashBtn.forEach(function(trash) {   
+  trashBtn.forEach(function(trash) {
       trash.addEventListener('click', function(event) {
           if (event.target.parentElement.classList.contains('cart-item-remove')) {
               let itemToMove = event.target.parentElement.parentElement;
@@ -113,4 +113,3 @@ function removeItem() {
       });
   });
 };
-

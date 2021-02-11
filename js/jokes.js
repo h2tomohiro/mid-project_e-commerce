@@ -10,7 +10,7 @@ const getDataJokes = async () => {
     const p = document.createElement('p');
     p.innerHTML = `${joke.joke}`;
     jokesRes.appendChild(p);
-    
+
     console.log(jokesRes);
 };
 
@@ -19,6 +19,3 @@ jokeBtn.addEventListener('click', e => {
     console.log('button click');
     getDataJokes();
 });
-
-
-
