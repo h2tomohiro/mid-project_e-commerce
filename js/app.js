@@ -1,4 +1,16 @@
-(() => {
+addItem()
+toggleCart()
+
+function toggleCart() {
+  const cartInfo = document.getElementById('cart-info');
+  const cart = document.getElementById('cart');
+
+  cartInfo.addEventListener('click', function () {
+    cart.classList.toggle('show-cart');
+  });
+};
+
+function addItem() {
   const cartBtn = document.querySelectorAll(".store-item-icon");
 
   cartBtn.forEach(function (btn) {
@@ -45,10 +57,11 @@
         alert("item added to the cart");
         showTotals();
         removeItem();
+        clearItem();
       }
     });
   });
-})();
+};
 
 function showTotals() {
   const total = [];
@@ -73,28 +86,16 @@ function removeItem() {
   const trashBtn = document.querySelectorAll(".cart-item-remove");
 
   trashBtn.forEach(function(trash) {
-      trash.addEventListener('click', function(event) {
-          if (event.target.parentElement.classList.contains('cart-item-remove')) {
-              let itemToMove = event.target.parentElement.parentElement;
-              itemToMove.remove();
-
-              showTotals();
-
-          }
-      });
+    trash.addEventListener('click', function(event) {
+      if (event.target.parentElement.classList.contains('cart-item-remove')) {
+          let itemToMove = event.target.parentElement.parentElement;
+          itemToMove.remove();
+      }
+    });
   });
 };
 
-(() => {
-  const cartInfo = document.getElementById('cart-info');
-  const cart = document.getElementById('cart');
-
-  cartInfo.addEventListener('click', function () {
-    cart.classList.toggle('show-cart');
-  });
-})();
-
-(() => {
+function clearItem() {
   const cartItem = document.getElementsByClassName("cart-item");
   const clearButton = document.getElementById("clear-cart");
   const cartTotal = document.getElementById("cart-total");
@@ -109,4 +110,4 @@ function removeItem() {
     itemCount.remove();
     itemTotal.remove();
   });
-})();
+};
