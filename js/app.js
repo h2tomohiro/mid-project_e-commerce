@@ -10,17 +10,12 @@
 (function () {
   const cartItem = document.getElementsByClassName("cart-item");
   const clearButton = document.getElementById("clear-cart");
-  const cartTotal = document.getElementById("cart-total");
-  const itemCount = document.getElementById("item-count");
-  const itemTotal = document.getElementById("item-total");
 
   clearButton.addEventListener('click', function () {
     while (cartItem.length) {
       cartItem.item(0).remove()
     }
-    cartTotal.remove();
-    itemCount.remove();
-    itemTotal.remove();
+    showTotals();
   });
 })();
 
